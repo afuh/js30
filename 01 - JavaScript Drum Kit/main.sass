@@ -1,0 +1,52 @@
+@import "normalize"
+
+html
+  font-size: 10px
+
+.drumpad
+  background: whitesmoke
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+.keys
+  min-width: 600px
+  height: 600px
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: center
+
+.key
+  flex-basis: 25%
+  height: 25%
+  border: .4rem solid black
+  border-radius: .5rem
+  margin: .6rem
+  font-size: 1.5rem
+  padding: 1rem .5rem
+  transition: all .07s ease
+  color: white
+  background: rgba(0,0,0,0.7)
+  text-shadow: 0 0 .5rem black
+  display: flex
+  flex-flow: column
+  justify-content: center
+  align-items: center
+
+.playing
+  transform: scale(1.2)
+  border-color: #ffc600
+  box-shadow: 0 0 1rem #ffc600
+
+kbd
+  display: block
+  font-size: 4rem
+
+.sound
+  font-size: 1.2rem
+  text-transform: uppercase
+  letter-spacing: .1rem
+  color: #ffc600
