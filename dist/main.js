@@ -13,25 +13,36 @@ var data = [{
 function addContent() {
   var showcase = document.getElementById('showcase');
 
-  return data.map(function (data) {
-    var box = document.createElement("div");
-    var link = document.createElement("a");
-    var img = document.createElement("img");
-    var span = document.createElement("span");
+  return data.map(function (data, i) {
+    var render = "";
+    render += "<div class='box'>";
+    render += "<span class='number'>" + (i + 1) + "</span>";
+    render += "<a target='_blank' href='" + data.url + "'>";
+    render += "<img alt='JS30' src='" + data.img + "'>";
+    render += "<span class='title'>" + data.title + "</span>";
+    render += "</a>";
+    render += "</div>";
 
-    box.appendChild(link);
-    link.appendChild(img);
-    link.appendChild(span);
-    showcase.appendChild(box);
+    showcase.insertAdjacentHTML("beforeend", render);
 
-    box.className = "box";
-    link.target = "_blank";
-    img.alt = "JS30";
-    span.className = "title";
-
-    span.innerHTML = data.title;
-    link.href = data.url;
-    img.src = data.img;
+    // const box = document.createElement("div");
+    // const link = document.createElement("a");
+    // const img = document.createElement("img");
+    // const span = document.createElement("span");
+    //
+    // box.appendChild(link);
+    // link.appendChild(img);
+    // link.appendChild(span);
+    // showcase.appendChild(box);
+    //
+    // box.className = "box";
+    // link.target = "_blank";
+    // img.alt = "JS30";
+    // span.className = "title";
+    //
+    // span.innerHTML = data.title;
+    // link.href = data.url;
+    // img.src = data.img;
   });
 }
 
