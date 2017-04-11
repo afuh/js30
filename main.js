@@ -2,7 +2,12 @@ const data = [
   {
     title: "JavaScript Drum Kit",
     url: "01 - JavaScript Drum Kit/index.html",
-    img: "01 - JavaScript Drum Kit/image/port.png"
+    img: "01 - JavaScript Drum Kit/image/01_port.png"
+  },
+  {
+    title: "JS and CSS Clock",
+    url: "02 - JS and CSS Clock/index.html",
+    img: "02 - JS and CSS Clock/image/02_port.png"
   }
 ];
 
