@@ -35,5 +35,6 @@ Temporary Items
 
 node_modules
 tapas.xcf
+_empty
 
 # End of https://www.gitignore.io/api/osx,sass
