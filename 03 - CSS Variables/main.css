@@ -1,0 +1,39 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --gray: 0;
+  --radius: 0;
+}
+
+img {
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  background: var(--base);
+  -webkit-filter: grayscale(var(--gray));
+          filter: grayscale(var(--gray));
+
+}
+
+.hl {
+  color: var(--base);
+}
+
+body {
+  text-align: center;
+}
+
+body {
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width:100px;
+}
