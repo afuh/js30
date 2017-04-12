@@ -22,10 +22,11 @@ function addContent(){
   return data.map((data, i) => {
     let render = "";
     render += "<div class='box'>";
-    render += `<span class='number'>${i + 1}</span>`;
     render += `<a target='_blank' href='${data.url}'>`;
     render += `<img alt='JS30' src='${data.img}'>`;
+    render += "<div class='title-grad'>";
     render += `<span class='title'>${data.title}</span>`;
+    render += "</div>";
     render += "</a>";
     render += "</div>";
 
