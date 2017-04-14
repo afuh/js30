@@ -1,4 +1,4 @@
-@import "normalize"
+// @import "normalize"
 
 html
   box-sizing: border-box
@@ -20,15 +20,13 @@ body
 
 .panel
   cursor: pointer
-
   background: #6B0F9C
   color: whitesmoke
   text-align: center
   align-items: center
   /* Safari transitionend event.propertyName === flex */
   /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition: font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11), flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11), background 0.2s, filter 3s
-  filter: grayscale(60%)
+  transition: font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11), flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11), background 0.2s
   font-size: 20px
   background-size: cover
   background-position: center
@@ -36,7 +34,7 @@ body
   justify-content: center
   align-items: center
   display: flex
-  flex-flow: column
+  flex-direction: column
 
 // Random pic from unplash API
 @for $i from 1 through 5
@@ -72,6 +70,5 @@ body
   font-size: 4em
 
 .panel.open
-  filter: grayscale(0)
   flex: 5
   font-size: 40px
