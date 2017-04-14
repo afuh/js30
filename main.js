@@ -33,5 +33,10 @@ const data = [
     title: "Update CSS Variables with JS",
     url: "03 - CSS Variables/index.html",
     img: "03 - CSS Variables/image/03_port.jpg"
+  },
+  {
+    title: "Flex Panel Gallery",
+    url: "05 - Flex Panel Gallery/index.html",
+    img: "05 - Flex Panel Gallery/image/05_port.jpg"
   }
 ];
