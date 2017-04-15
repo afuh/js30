@@ -38,5 +38,10 @@ const data = [
     title: "Flex Panel Gallery",
     url: "05 - Flex Panel Gallery/index.html",
     img: "05 - Flex Panel Gallery/image/05_port.jpg"
+  },
+  {
+    title: "Type Ahead",
+    url: "06 - Type Ahead/index.html",
+    img: "06 - Type Ahead/image/06_port.jpg"
   }
 ];
