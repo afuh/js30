@@ -8,7 +8,6 @@ canvas.color = "red";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 0;
-ctx.globalCompositeOperation = "hue";
 
 let isDrawing = false;
 let lastX = 0;
