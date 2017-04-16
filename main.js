@@ -43,5 +43,10 @@ const data = [
     title: "Type Ahead",
     url: "06 - Type Ahead/index.html",
     img: "06 - Type Ahead/image/06_port.jpg"
+  },
+  {
+    title: "HTML5 Canvas",
+    url: "08 - Fun with HTML5 Canvas/index.html",
+    img: "08 - Fun with HTML5 Canvas/image/08_port.jpg"
   }
 ];
