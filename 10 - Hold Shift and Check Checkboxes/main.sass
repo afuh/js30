@@ -4,20 +4,32 @@ html
   font-family: sans-serif
   background: #009688
 
+.mail-cont
+  width: 1200px
+  min-width: 1200px
+  margin: 0 auto
+
+img
+  width: 20px
+  height: auto
+  position: relative
+  left: 16px
+  bottom: -6px
+
 .msg
   font-style: italic
-  margin: 0 auto
-  max-width: 400px
-  color: #333
+  margin: 50px auto 10px
+  max-width: 1200px
+  color: #ddd
 
-.inbox
-  max-width: 400px
-  margin: 50px auto 16px
+#inbox
+  margin: 16px auto
   background: white
   border-radius: 5px
   box-shadow: 10px 10px 0 rgba(0,0,0,0.1)
 
 .item
+  padding-right: 10px
   display: flex
   align-items: center
   border-bottom: 1px solid #F1F1F1
@@ -25,20 +37,43 @@ html
 .item:last-child
   border-bottom: 0
 
+.mail
+  cursor: pointer
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 50px
 
-input:checked + p
-  background: #F9F9F9
-  text-decoration: line-through
+
+.name
+  font-weight: 500
+.title
+  font-weight: 400
+  flex: 2
+
+.intro
+  flex: 6
+
+.date
+  text-align: right
+
+.name, .title, .intro, .date
+  margin: 0 5px
+
+input
+  cursor: pointer
+
+input:checked + .mail
+  background: fade-out(yellow, 0.9)
 
 input[type="checkbox"]
-  margin: 20px
+  margin: 0 20px
 
 p
   margin: 0
-  padding: 20px
   transition: background 0.2s
   flex: 1
   font-family: 'helvetica neue'
-  font-size: 20px
+  font-size: 14px
   font-weight: 200
-  border-left: 1px solid #D1E2FF
