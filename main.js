@@ -48,5 +48,10 @@ const data = [
     title: "HTML5 Canvas",
     url: "08 - Fun with HTML5 Canvas/index.html",
     img: "08 - Fun with HTML5 Canvas/image/08_port.jpg"
+  },
+  {
+    title: "Hold Shift and Check Checkboxes",
+    url: "10 - Hold Shift and Check Checkboxes/index.html",
+    img: "10 - Hold Shift and Check Checkboxes/image/10_port.jpg"
   }
 ];
