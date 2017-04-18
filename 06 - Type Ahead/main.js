@@ -1,9 +1,21 @@
-const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 const cities = [];
 
-fetch(endpoint)
-  .then(blob => blob.json())
-  .then(data => cities.push(...data));
+// Safari not support fetch at this moment.
+// fetch(endpoint)
+//   .then(blob => blob.json())
+//   .then(data => cities.push(...data));
+
+function request() {
+    const request = new XMLHttpRequest(),
+        url = "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
+    request.open('GET', url);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+        cities.push(...request.response);
+  };
+}
+window.onload = request;
 
 function findMatches(wordToMatch, cities) {
   return  cities.filter(place => {
