@@ -53,5 +53,10 @@ const data = [
     title: "Hold Shift and Check Checkboxes",
     url: "10 - Hold Shift and Check Checkboxes/index.html",
     img: "10 - Hold Shift and Check Checkboxes/image/10_port.jpg"
+  },
+  {
+    title: "Custom Video Player",
+    url: "11 - Custom Video Player/index.html",
+    img: "11 - Custom Video Player/image/11_port.jpg"
   }
 ];

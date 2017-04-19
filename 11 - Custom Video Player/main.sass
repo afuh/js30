@@ -1,6 +1,5 @@
 @import "normalize"
 
-// TODO: Fullscreen button
 html
   box-sizing: border-box
 
@@ -20,12 +19,10 @@ body
 
 .player
   max-width: 750px
-  border: 5px solid rgba(0,0,0,0.2)
   box-shadow: 0 0 20px rgba(0,0,0,0.2)
   position: relative
   font-size: 0
   overflow: hidden
-
 
 /* This css is only applied when fullscreen is active. */
 .player:fullscreen
@@ -38,7 +35,6 @@ body
 
 .player__video
   width: 100%
-
 
 .player__button
   background: none
@@ -63,13 +59,13 @@ body
   position: absolute
   bottom: 0
   width: 100%
-  // transform: translateY(100%) translateY(-5px)
+  transform: translateY(100%) translateY(-5px)
   transition: all .3s
   flex-wrap: wrap
   background: rgba(0,0,0,0.1)
 
 .player:hover .player__controls
-  // transform: translateY(0)
+  transform: translateY(0)
 
 .player:hover .progress
   height: 15px
@@ -143,8 +139,3 @@ input[type=range]::-moz-range-thumb
   border-radius: 50px
   background: #ffc600
   cursor: pointer
-
-
-.player:fullscreen
-  max-width: none
-  width: 100%
