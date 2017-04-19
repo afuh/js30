@@ -58,5 +58,10 @@ const data = [
     title: "Custom Video Player",
     url: "11 - Custom Video Player/index.html",
     img: "11 - Custom Video Player/image/11_port.jpg"
+  },
+  {
+    title: "Key Sequence Detection",
+    url: "12 - Key Sequence Detection/index.html",
+    img: "12 - Key Sequence Detection/image/12_port.jpg"
   }
 ];
