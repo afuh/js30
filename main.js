@@ -63,5 +63,10 @@ const data = [
     title: "Key Sequence Detection",
     url: "12 - Key Sequence Detection/index.html",
     img: "12 - Key Sequence Detection/image/12_port.jpg"
+  },
+  {
+    title: "Slide in on Scroll",
+    url: "13 - Slide in on Scroll/index.html",
+    img: "13 - Slide in on Scroll/image/13_port.jpg"
   }
 ];
