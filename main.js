@@ -68,5 +68,10 @@ const data = [
     title: "Slide in on Scroll",
     url: "13 - Slide in on Scroll/index.html",
     img: "13 - Slide in on Scroll/image/13_port.jpg"
+  },
+  {
+    title: "Local Storage",
+    url: "15 - LocalStorage/index.html",
+    img: "15 - LocalStorage/image/14_port.jpg"
   }
 ];
