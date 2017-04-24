@@ -5,7 +5,7 @@ function addContent(){
     const render =
     `<div class='box'>
       <a target='_blank' href='${data.url}'>
-        <img alt='JS30' src='${data.img}'>
+        <img alt='${data.title}' src='${data.img}'>
         <div class='title-grad'>
           <span class='title'>${data.title}</span>
         </div>
