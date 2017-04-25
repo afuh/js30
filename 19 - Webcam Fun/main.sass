@@ -1,0 +1,86 @@
+@import "normalize"
+
+$colorA: desaturate(#1F1C18, 30%)
+$colorB: desaturate(#8E0E00, 30%)
+$red: #F44336
+
+html
+  box-sizing: border-box
+  background: #FF5722
+  // background: linear-gradient(to bottom, $colorA, $colorB) no-repeat
+  background-size: cover
+  min-height: 100vh
+
+.photobooth
+  margin: 20px auto
+
+.photo
+  width: 100%
+  // border: 3px solid black
+
+.player
+  display: none
+
+.conteiner
+  padding: 20px 0
+  background: whitesmoke
+  display: flex
+  flex-flow: column
+  justify-content: center
+  align-items: center
+  margin: auto
+  border: 5px solid black
+  width: 720px
+  height: 600px
+  border-radius: 20px
+  box-shadow: 6px 6px 6px 0 rgba(0,0,0,0.3), 0 0 0 1px rgba(0,0,0,0.3)
+
+.controls
+  border-bottom-left-radius: 8px
+  border-bottom-right-radius: 8px
+  background: whitesmoke
+  padding: 10px
+  align-self: stretch
+  display: flex
+  flex-flow: column
+  justify-content: center
+
+.take-photo
+  padding-top: 16px
+  opacity: 0
+  transition: opacity 1s
+  button
+    font-size: 24px
+    color: white
+    background: $red
+    border: none
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    transition: all 0.2s
+    &:focus
+      outline: none
+    &:active
+      background: darken($red, 20%)
+    &:hover
+      transform: scale(1.1)
+
+.strip
+  padding: 2rem
+  img
+    width: 100px
+    overflow-x: scroll
+    padding: 0.8rem 0.8rem 2.5rem 0.8rem
+    box-shadow: 0 0 3px rgba(0,0,0,0.5)
+    background: white
+
+.strip a:nth-child(5n+1) img
+    transform: rotate(10deg)
+.strip a:nth-child(5n+2) img
+    transform: rotate(-2deg)
+.strip a:nth-child(5n+3) img
+    transform: rotate(8deg)
+.strip a:nth-child(5n+4) img
+    transform: rotate(-11deg)
+.strip a:nth-child(5n+5) img
+    transform: rotate(12deg)
