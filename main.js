@@ -83,5 +83,10 @@ const data = [
     title: "Webcam Fun",
     url: "19 - Webcam Fun/index.html",
     img: "19 - Webcam Fun/image/19_port.jpg"
+  },
+  {
+    title: "Speech Detection",
+    url: "20 - Speech Detection/index.html",
+    img: "20 - Speech Detection/image/20_port.jpg"
   }
 ];
