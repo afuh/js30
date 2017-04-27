@@ -1,0 +1,1 @@
+"use strict";var arrow=document.querySelector(".arrow"),speed=document.querySelector(".speed-value");navigator.geolocation.watchPosition(function(e){console.log(e),speed.textContent=e.coords.speed,arrow.style.transform="rotate("+e.coords.heading+"deg)"},function(e){console.err(e)});
