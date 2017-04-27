@@ -88,5 +88,10 @@ const data = [
     title: "Speech Detection",
     url: "20 - Speech Detection/index.html",
     img: "20 - Speech Detection/image/20_port.jpg"
+  },
+  {
+    title: "Follow Along Link Highlighter",
+    url: "22 - Follow Along Link Highlighter/index.html",
+    img: "22 - Follow Along Link Highlighter/image/22_port.jpg"
   }
 ];

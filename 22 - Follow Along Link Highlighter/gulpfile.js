@@ -23,7 +23,7 @@ gulp.task('sass', function() {
   return gulp.src("./main.sass")
     .pipe(sass({
       errLogToConsole: true,
-      outputStyle: 'expanded',
+      outputStyle: 'nested',
       includePaths: require('node-normalize-scss').includePaths
     }).on('error', sass.logError))
     .pipe(autoprefixer())
@@ -50,7 +50,7 @@ gulp.task('miniJS', function () {
 gulp.task('miniCSS', function () {
   return gulp.src("dist/main.css")
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('dist'));
 });
 
 
