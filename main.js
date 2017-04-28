@@ -93,5 +93,10 @@ const data = [
     title: "Follow Along Link Highlighter",
     url: "22 - Follow Along Link Highlighter/index.html",
     img: "22 - Follow Along Link Highlighter/image/22_port.jpg"
+  },
+  {
+    title: "Speech Synthesis",
+    url: "23 - Speech Synthesis/index.html",
+    img: "23 - Speech Synthesis/image/23_port.jpg"
   }
 ];
