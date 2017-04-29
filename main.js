@@ -98,5 +98,10 @@ const data = [
     title: "Speech Synthesis",
     url: "23 - Speech Synthesis/index.html",
     img: "23 - Speech Synthesis/image/23_port.jpg"
+  },
+  {
+    title: "Sticky Nav & Parallax",
+    url: "24 - Sticky Nav/index.html",
+    img: "24 - Sticky Nav/image/24_port.jpg"
   }
 ];
