@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS30</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+
+    <div class="one">
+      <div class="two">
+        <div class="three">
+        </div>
+      </div>
+    </div>
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after { box-sizing: inherit; }
+
+      div {
+        width:100%;
+        padding:100px;
+      }
+
+      .one {
+        background: thistle;
+      }
+
+      .two {
+        background:mistyrose;
+      }
+
+      .three {
+        background:coral;
+      }
+    </style>
+
+<script>
+const divs = document.querySelectorAll("div");
+
+function logText(e) {
+  console.log(this.classList.value);
+  e.stopPropagation();
+}
+
+divs.forEach(div => div.addEventListener("click", logText, {
+  capture: false,
+  once: true
+}));
+
+</script>
+</body>
+</html>

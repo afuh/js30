@@ -103,5 +103,10 @@ const data = [
     title: "Sticky Nav & Parallax",
     url: "24 - Sticky Nav/index.html",
     img: "24 - Sticky Nav/image/24_port.jpg"
+  },
+  {
+    title: "Stripe Follow Along Nav",
+    url: "26 - Stripe Follow Along Nav/index.html",
+    img: "26 - Stripe Follow Along Nav/image/26_port.jpg"
   }
 ];
