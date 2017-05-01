@@ -108,5 +108,10 @@ const data = [
     title: "Stripe Follow Along Nav",
     url: "26 - Stripe Follow Along Nav/index.html",
     img: "26 - Stripe Follow Along Nav/image/26_port.jpg"
+  },
+  {
+    title: "Click and Drag",
+    url: "27 - Click and Drag/index.html",
+    img: "27 - Click and Drag/image/27_port.jpg"
   }
 ];
