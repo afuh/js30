@@ -113,5 +113,10 @@ const data = [
     title: "Click and Drag",
     url: "27 - Click and Drag/index.html",
     img: "27 - Click and Drag/image/27_port.jpg"
+  },
+  {
+    title: "Video Speed Controller",
+    url: "28 - Video Speed Controller/index.html",
+    img: "28 - Video Speed Controller/image/28_port.jpg"
   }
 ];
