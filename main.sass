@@ -1,6 +1,8 @@
 @import "normalize"
 
-//Flex grid        
+$cyan: #00BCD4
+
+//Flex grid
 =grid-size($col: 1, $total: 4)
   flex-basis: percentage($col/$total)
 
@@ -31,10 +33,37 @@ body
   //#191919
 
 // Style
+header
+  padding: 0 10px
+  display: flex
+  flex-flow: column
+  h1, p, a, h4
+    color: whitesmoke
+    // text-align: right
+  h1
+    margin: 2px 0
+  h4
+    text-transform: uppercase
+    margin: 0 0 10px
+  a
+    text-decoration: none
+    border-bottom: 1px solid $cyan
+    &:hover
+      color: $cyan
+      border: none
+    &:visited
+      border-bottom: 1px solid $cyan
+  .subtitle
+    display: flex
+    justify-content: space-between
+    p
+      margin: 0
+
 img
   +size(100%, auto)
   display: block
   transition: filter 0.8s ease
+  transition: transform 3s ease
 
 #showcase
   padding: 10px
@@ -55,6 +84,7 @@ img
   transition: opacity ease-in-out 0.3s
 
 .box
+  overflow: hidden
   text-align: center
   position: relative
   background: #2f2f31
@@ -65,6 +95,7 @@ img
       opacity: 1
     img
       filter: brightness(0.7)
+      transform: scale(1.05)
 
 .title
   margin-bottom: 6%
