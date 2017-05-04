@@ -123,5 +123,10 @@ const data = [
     title: "Countdown Timer",
     url: "29 - Countdown Timer/index.html",
     img: "29 - Countdown Timer/image/29_port.jpg"
+  },
+  {
+    title: "Whack A Mole",
+    url: "30 - Whack A Mole/index.html",
+    img: "30 - Whack A Mole/image/30_port.jpg"
   }
 ];
