@@ -41,14 +41,26 @@ function scrub(e){
   video.currentTime = scrubTime;
 }
 
-function toggleFullScreen(){
-  if (video.requestFullscreen) {
-   video.requestFullscreen();
- } else if (video.mozRequestFullScreen) {
-   video.mozRequestFullScreen(); // Firefox
- } else if (video.webkitRequestFullscreen) {
-   video.webkitRequestFullscreen(); // Chrome and Safari
- }
+//fullscreen Mambo
+function enterFullScreen(){
+  if (player.requestFullscreen) player.requestFullscreen();
+  else if (player.mozRequestFullScreen) player.mozRequestFullScreen();
+  else if (player.webkitRequestFullscreen) player.webkitRequestFullscreen();
+}
+
+function exitFullScreen(){
+  if (document.exitFullscreen) document.exitFullscreen();
+  else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+  else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+}
+
+function isFullScreen(){
+  return (document.fullScreenElement && document.fullScreenElement !== null) || document.mozFullScreen || document.webkitIsFullScreen;
+}
+
+function toggleFullScreen() {
+  if (isFullScreen()) exitFullScreen();
+  else enterFullScreen(document.documentElement);
 }
 
 //Hook up the event listeners
