@@ -1,6 +1,6 @@
 const cities = [];
 
-// Safari not support fetch at this moment.
+// Safari doesn't support fetch at this moment. 
 // fetch(endpoint)
 //   .then(blob => blob.json())
 //   .then(data => cities.push(...data));

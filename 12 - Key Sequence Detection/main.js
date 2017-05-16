@@ -14,9 +14,10 @@ class Chuck {
       2: "image/chuck3.gif",
       3: "image/chuck4.png",
       4: "image/chuck5.gif",
-      5: "image/chuck6.gif"
+      5: "image/chuck6.gif",
+      6: "image/chuck7.png"
     };
-    this.img = this.url[Math.floor(Math.random() * 6)];
+    this.img = this.url[Math.floor(Math.random() * 7)];
   }
   render(){
     const body = document.querySelector('body');
