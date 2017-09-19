@@ -20,7 +20,7 @@ gulp.task('babel', function () {
   return gulp.src("./main.js")
     .pipe(plumber())
     .pipe(babel({
-      "presets": ["babel-preset-es2015"].map(require.resolve)
+      "presets": ["babel-preset-env"].map(require.resolve)
     }))
     .pipe(gulp.dest("./dist"))
     .pipe(browserSync.stream());
